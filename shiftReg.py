@@ -38,10 +38,10 @@ class sr:
   def default(self):
     try:
       print(f"\nPin Default\n  Data: {self.p[0]}\n  Latch: {self.p[1]}\n  Clock: {self.p[2]}\n")
-      sr.inisialisasi(self)
-      sr.digit(self)
+      self.inisialisasi()
+      self.digit()
       nul = '0' * 8
-      sr.proses(self)
+      self.proses()
       time.sleep(2)
       GPIO.output(int(self.p[1]), 1)
       print(f"\nMengembalikan semua nilai shift register\nDigit: {nul}\n")
@@ -52,10 +52,10 @@ class sr:
   def custom(self):
     try:
       print(f"\nPin Custom\n  Data: {self.p[0]}\n  Latch: {self.p[1]}\n  Clock: {self.p[2]}\n")
-      sr.inisialisasi(self)
-      sr.digit(self)
+      self.inisialisasi()
+      self.digit()
       nul = '0' * 8
-      sr.proses(self)
+      self.proses()
       time.sleep(2)
       GPIO.output(int(self.p[1]), 1)
       print(f"\nMengembalikan semua nilai shift register\nDigit: {nul}\n")
