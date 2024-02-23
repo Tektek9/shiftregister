@@ -38,8 +38,8 @@ class sr:
   def default(self):
     try:
       print(f"\nPin Default\n  Data: {self.p[0]}\n  Latch: {self.p[1]}\n  Clock: {self.p[2]}\n")
-      sr.inisialisasi(self)
-      sr.digit(self)
+      sr.inisialisasi()
+      sr.digit()
       nul = '0' * 8
       sr.proses(self)
       time.sleep(2)
@@ -52,8 +52,8 @@ class sr:
   def custom(self):
     try:
       print(f"\nPin Custom\n  Data: {self.p[0]}\n  Latch: {self.p[1]}\n  Clock: {self.p[2]}\n")
-      sr.inisialisasi(self)
-      sr.digit(self)
+      sr.inisialisasi()
+      sr.digit()
       nul = '0' * 8
       sr.proses(self)
       time.sleep(2)
